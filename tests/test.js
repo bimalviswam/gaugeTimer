@@ -1,17 +1,13 @@
-const {
-    now
-} = require("moment");
-
-
-const currentTime = now + 5000;
+const currentTime = Date.now() + 5000;
 
 
 module.exports = {
 
     async printForFiveSeconds() {
         let timer = setInterval(() => {
+
             console.log("hello world");
-            if (now() > currenttime) {
+            if (Date.now() > currentTime) {
                 clearInterval(timer);
             }
         }, 1000);
